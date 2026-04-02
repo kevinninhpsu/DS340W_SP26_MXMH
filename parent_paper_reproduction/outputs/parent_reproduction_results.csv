@@ -1,0 +1,17 @@
+target,model,accuracy,precision,recall,f1_score
+anxiety,Decision Tree,0.5694,0.7079,0.6364,0.6702
+anxiety,Random Forest,0.6181,0.6774,0.8485,0.7534
+anxiety,SVM,0.6875,0.6985,0.9596,0.8085
+anxiety,Neural Network (MLP),0.6181,0.7,0.7778,0.7368
+depression,Decision Tree,0.5069,0.5625,0.4557,0.5035
+depression,Random Forest,0.5417,0.5747,0.6329,0.6024
+depression,SVM,0.6042,0.61,0.7722,0.6816
+depression,Neural Network (MLP),0.5139,0.5556,0.5696,0.5625
+insomnia,Decision Tree,0.5347,0.4098,0.4464,0.4274
+insomnia,Random Forest,0.5764,0.3913,0.1607,0.2278
+insomnia,SVM,0.5764,0.3333,0.0893,0.1408
+insomnia,Neural Network (MLP),0.5417,0.3958,0.3393,0.3654
+ocd,Decision Tree,0.625,0.2955,0.3611,0.325
+ocd,Random Forest,0.7014,0.1111,0.0278,0.0444
+ocd,SVM,0.75,0.0,0.0,0.0
+ocd,Neural Network (MLP),0.6389,0.2647,0.25,0.2571
