@@ -4,7 +4,7 @@
 Impact of Music on Brain and Mental Health: Classification using Machine Learning Algorithms
 
 ## Objective
-The goal of this module is to reproduce the results of the parent paper using the original MXMH dataset and a comparable machine learning pipeline. This serves as the baseline implementation before introducing any modifications in later phases of the project.
+The goal of this module is to reproduce the results of the parent paper using the original dataset and a comparable machine learning pipeline. This serves as the baseline implementation before introducing any modifications in later phases of the project.
 
 ## Dataset
 - File: `mxmh_survey_results.csv`

@@ -319,6 +319,40 @@ def evaluate_target(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
 
     return pd.DataFrame(rows)
 
+def save_model_comparison_graph(results_df: pd.DataFrame) -> None:
+    """
+    Create a grouped bar chart similar to Fig. 10 in the parent paper.
+    Uses one target for comparison. Anxiety is the best choice because
+    the parent paper discusses it most clearly.
+    """
+    target_df = results_df[results_df["target"] == "anxiety"].copy()
+
+    # Match paper order
+    model_order = ["SVM", "Neural Network (MLP)", "Random Forest", "Decision Tree"]
+    target_df["model"] = pd.Categorical(target_df["model"], categories=model_order, ordered=True)
+    target_df = target_df.sort_values("model")
+
+    metrics = ["accuracy", "precision", "recall", "f1_score"]
+    metric_labels = ["Accuracy", "Precision", "Recall", "F1-score"]
+
+    x = np.arange(len(target_df))
+    width = 0.18
+
+    plt.figure(figsize=(10, 6))
+
+    for i, (metric, label) in enumerate(zip(metrics, metric_labels)):
+        plt.bar(x + i * width, target_df[metric], width=width, label=label)
+
+    plt.xticks(x + 1.5 * width, target_df["model"], rotation=45, ha="right")
+    plt.ylim(0, 1.0)
+    plt.xlabel("Classifier")
+    plt.ylabel("Score")
+    plt.title("Performance Comparison of Machine Learning Models")
+    plt.legend(title="Metrics")
+    plt.tight_layout()
+    plt.savefig(OUTPUT_DIR / "algorithm_comparison_graph.png", dpi=300)
+    plt.close()
+
 
 def main() -> None:
     print("Loading dataset...")
@@ -345,6 +379,7 @@ def main() -> None:
 
     final_results = pd.concat(all_results, ignore_index=True)
     final_results.to_csv(OUTPUT_DIR / "parent_reproduction_results.csv", index=False)
+    save_model_comparison_graph(final_results) 
 
     print("\nParent reproduction results:\n")
     print(final_results.to_string(index=False))
