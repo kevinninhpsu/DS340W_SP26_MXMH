@@ -82,17 +82,42 @@ mxmh_spotify_test.csv
 
 ## How to Run
 
-1. Install Required Libraries
+## How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/kevinninhpsu/DS340W_SP26_MXMH.git
+cd DS340W_SP26_MXMH
+```
+
+### 2. Create a Virtual Environment (Recommended)
+
+```bash
+python -m venv venv
+```
+Activate the environment:
+
+Mac/Linux:
+```
+source venv/bin/activate
+```
+Windows:
+```
+venv\Scripts\activate
+```
+
+3. Install Required Libraries
 ```
 pip install -r requirements.txt
 ```
 
-2. Run the Final Pipeline
+4. Run the Final Pipeline
 ```
 python finalpipeline.py
 ```
 
-3. View Outputs
+5. View Outputs
 
 Results will be generated in:
 
