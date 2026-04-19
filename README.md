@@ -74,23 +74,36 @@ Final split files included in this repository:
 ```bash
 git clone https://github.com/kevinninhpsu/DS340W_SP26_MXMH.git
 cd DS340W_SP26_MXMH
+```
 
 ### 2. Create a Virtual Environment (Recommended)
 
 ```bash
 python -m venv venv
+```
+Activate the environment:
 
+Mac/Linux:
+```
 source venv/bin/activate
+```
+Windows:
+```
 venv\Scripts\activate
+```
 
 3. Install Required Libraries
+```
 pip install -r requirements.txt
+```
 
-4. Run the Final Pipeline
+5. Run the Final Pipeline
+```
 python finalpipeline.py
+```
 
-5. View Outputs
+7. View Outputs
 
 Results will be generated in:
 
-outputs_mxmh_presentation/
+`outputs_mxmh_presentation/`
