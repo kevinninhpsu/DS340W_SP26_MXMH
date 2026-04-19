@@ -69,10 +69,11 @@ Final split files included in this repository:
 
 ## Required Files
 1). finanlpipeline.py
+
 2). 
-- `mxmh_spotify_train.csv`
-- `mxmh_spotify_validation.csv`
-- `mxmh_spotify_test.csv`
+`mxmh_spotify_train.csv`
+`mxmh_spotify_validation.csv`
+`mxmh_spotify_test.csv`
 3). requirements.txt
 
 ## How to Run
