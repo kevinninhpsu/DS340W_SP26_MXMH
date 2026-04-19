@@ -28,11 +28,8 @@ warnings.filterwarnings("ignore")
 
 
 # ============================================================
-# FINAL PROJECT PIPELINE: PRESENTATION-READY OUTPUTS ONLY
-# Author: Sanjana Vuppunahalli
-#
-# Uses already-combined train / validation / test splits.
-# Keeps the most presentation-useful outputs and styles them.
+# FINAL PROJECT PIPELINE
+# Author: Sanjana Vuppunahalli, Kevin Ninh
 # ============================================================
 
 
