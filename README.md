@@ -68,7 +68,7 @@ Final split files included in this repository:
 - `mxmh_spotify_test.csv`
 
 ## Required Files
-1). finanlpipeline.py
+1). finalpipeline.py
 
 2). 
 mxmh_spotify_train.csv
