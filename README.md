@@ -97,12 +97,12 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-5. Run the Final Pipeline
+4. Run the Final Pipeline
 ```
 python finalpipeline.py
 ```
 
-7. View Outputs
+5. View Outputs
 
 Results will be generated in:
 
