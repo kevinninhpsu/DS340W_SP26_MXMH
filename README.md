@@ -68,6 +68,9 @@ Final split files included in this repository:
 - `mxmh_spotify_test.csv`
 
 ## Required Files
+
+ENSURE THAT YOU HAVE PYTHON AND AN IDE INSTALLED!
+
 1). finalpipeline.py
 
 2). 
