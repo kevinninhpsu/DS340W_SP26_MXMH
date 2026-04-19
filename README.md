@@ -84,12 +84,8 @@ mxmh_spotify_test.csv
 
 ## How to Run
 
-### 1. Clone the repository
+### 1. Download Zip from Github
 
-```bash
-git clone https://github.com/kevinninhpsu/DS340W_SP26_MXMH.git
-cd DS340W_SP26_MXMH
-```
 
 2. Install Required Libraries
 ```
