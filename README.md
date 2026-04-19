@@ -79,8 +79,6 @@ mxmh_spotify_test.csv
 
 ## How to Run
 
-### 1. Clone the repository
-
 1. Install Required Libraries
 ```
 pip install -r requirements.txt
