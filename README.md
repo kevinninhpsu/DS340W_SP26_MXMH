@@ -84,7 +84,7 @@ mxmh_spotify_test.csv
 
 ## How to Run
 
-### 1. Download Zip from Github
+1. Download Zip from Github
 
 
 2. Install Required Libraries
@@ -94,6 +94,8 @@ pip install -r requirements.txt
 
 3. Run the Final Pipeline
 ```
+cd DS340W_SP26_MXMH-main/DS340W_SP26_MXMH
+
 python finalpipeline.py
 ```
 
